@@ -5,7 +5,7 @@ const TestPage = () => {
   return (
     <div className="flex">
       <div className="w-1/4 bg-gray-200">
-        <h2 className="text-xl font-bold px-4 py-3">Projects</h2>
+        <h2 className="text-xl font-bold px-4 py-3">Test Algorithms:</h2>
         <ul className="px-4 py-2">
           <li>
             <Link
