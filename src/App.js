@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
-import Test from "./components/Test";
+import TestPage from "./components/Test";
 import Projects from "./components/Projects";
 import HousePredictionPage from "./components/HousePredictionPage";
 
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/test" element={<Test />} />
+          <Route path="/test" element={<TestPage />} />
           <Route
             path="/test/house-prediction/:id"
             element={<HousePredictionPage />}
