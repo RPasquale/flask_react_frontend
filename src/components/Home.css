@@ -1,0 +1,13 @@
+.home-title {
+    color: black;
+    font-size: 24px;
+}
+
+.home-text {
+    font-style: italic;
+}
+
+.home-image {
+    max-width: 100%;
+    max-height: 100%;
+}
