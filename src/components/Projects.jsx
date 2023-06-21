@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 const projectsData = [
   {
@@ -10,14 +9,13 @@ const projectsData = [
     algorithm: "Algorithm used for Project 1",
     results: "Analysis of results for Project 1",
   },
-  // Add more project data as needed
   {
-  id: 2,
-  title: "New Project",
-  description: "Description of New Project",
-  algorithm: "Algorithm used for New Project",
-  results: "Analysis of results for New Project",
-}
+    id: 2,
+    title: "New Project",
+    description: "Description of New Project",
+    algorithm: "Algorithm used for New Project",
+    results: "Analysis of results for New Project",
+  },
 ];
 
 const Projects = () => {
@@ -29,17 +27,19 @@ const Projects = () => {
           <p>{project.description}</p>
           <p>{project.algorithm}</p>
           <p>{project.results}</p>
-          {/* Add a link to the respective project on the Test page */}
-          <Link to={`/test/house-prediction/${project.id}`}>Test Project</Link>
-
+          {project.id === 1 ? (
+            // House Prediction Link
+            <Link to={`/test/house-prediction/${project.id}`}>Test Project</Link>
+          ) : (
+            // Diabetes Prediction Link
+            <Link to={`/test/diabetes-prediction/${project.id}`}>Test Project</Link>
+          )}
         </div>
       ))}
     </div>
-    
-    
-
   );
 };
 
 export default Projects;
+
 

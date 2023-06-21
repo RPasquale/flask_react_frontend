@@ -17,6 +17,14 @@ const TestPage = () => {
               House Prediction
             </Link>
           </li>
+          <li>
+            <Link
+              to={`/test/diabetes-prediction/${id}`} // Use the id from useParams()
+              className="text-blue-600 hover:text-blue-800"
+            >
+              Diabetes Prediction
+            </Link>
+          </li>
           {/* Add more project options as needed */}
         </ul>
       </div>

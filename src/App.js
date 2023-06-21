@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import TestPage from "./components/Test";
 import Projects from "./components/Projects";
 import HousePredictionPage from "./components/HousePredictionPage";
+import DiabetesPredictionPage from "./components/DiabetesPredictionPage";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           <Route
             path="/test/house-prediction/:id"
             element={<HousePredictionPage />}
+          />
+          <Route
+            path="/test/diabetes-prediction/:id"
+            element={<DiabetesPredictionPage />}
           />
           <Route path="/contact" element={<Contact />} />
         </Routes>
