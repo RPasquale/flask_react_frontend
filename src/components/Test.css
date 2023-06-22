@@ -1,0 +1,56 @@
+/* Test.css */
+
+/* Styles for the TestPage container */
+.test-container {
+    display: flex;
+    justify-content: center;
+    /* Align items horizontally at the center */
+    padding: 1rem;
+    /* Add padding to create space between buttons and window edge */
+    box-sizing: border-box;
+    /* Include padding in total width calculation */
+}
+
+/* Styles for the sidebar */
+.sidebar {
+    flex: 1;
+    max-width: 400px;
+    background-color: #f7fafc;
+    padding: 1rem;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar li {
+    margin-bottom: 0.5rem;
+}
+
+/* Styles for the links */
+.dynamic-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    /* Set the width to 100% to expand the buttons */
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    /* Include padding in total width calculation */
+}
+
+.dynamic-button:hover {
+    transform: scale(1.1);
+}

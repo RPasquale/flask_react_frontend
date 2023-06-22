@@ -34,8 +34,13 @@
     color: white;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    width: fit-content;
+    /* Added transition property */
 }
 
 .contact-form button:hover {
     background-color: #3367d6;
+    transform: rotate(360deg);
+    /* Added transform property */
 }

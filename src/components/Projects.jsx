@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Projects.css";
 
 const projectsData = [
   {
@@ -20,19 +21,21 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="projects-grid">
       {projectsData.map((project) => (
-        <div key={project.id} className="border p-4">
-          <h2 className="text-xl font-semibold">{project.title}</h2>
-          <p>{project.description}</p>
-          <p>{project.algorithm}</p>
-          <p>{project.results}</p>
+        <div key={project.id} className="project-card">
+          <h2 className="project-title">{project.title}</h2>
+          <p className="project-description">{project.description}</p>
+          <p className="project-algorithm">{project.algorithm}</p>
+          <p className="project-results">{project.results}</p>
           {project.id === 1 ? (
-            // House Prediction Link
-            <Link to={`/test/house-prediction/${project.id}`}>Test KNN for House Prediction</Link>
+            <Link to={`/test/house-prediction/${project.id}`} className="project-button">
+              Test KNN for House Prediction
+            </Link>
           ) : (
-            // Diabetes Prediction Link
-            <Link to={`/test/diabetes-prediction/${project.id}`}>Test Linear Models With Regularization </Link>
+            <Link to={`/test/diabetes-prediction/${project.id}`} className="project-button">
+              Test Linear Models With Regularization
+            </Link>
           )}
         </div>
       ))}
@@ -41,5 +44,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
